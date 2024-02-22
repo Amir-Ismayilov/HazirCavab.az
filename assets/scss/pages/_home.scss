@@ -1,0 +1,613 @@
+.section {
+  // Section Start
+  &__start {
+    position: relative;
+    height: 100vh;
+    .letter {
+      position: absolute;
+      &__h {
+        top: 10px;
+        left: 0;
+      }
+      &__u {
+        bottom: -100px;
+        right: 0;
+      }
+    }
+    &__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .text-combine {
+        position: relative;
+        margin-top: 20px;
+        img {
+          position: absolute;
+          bottom: -60px;
+          right: -25px;
+        }
+
+        p {
+          font-size: 49px;
+          color: map-get($myListColor, "font-color-blue");
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          font-weight: 300;
+          line-height: 57px;
+          -webkit-text-stroke: 1px #000;
+        }
+      }
+    }
+  }
+
+  // Section Marketing
+  &__marketing {
+    padding: 220px 0;
+    background-image: url("../images/background/bg-letter-1.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    &__header {
+      text-align: center;
+      .inside__header {
+        position: relative;
+        display: inline-block;
+        h1 {
+          color: map-get($myListColor, "font-color-blue");
+          font-size: 96px;
+          font-weight: 700;
+          line-height: 110px;
+          margin-bottom: 205px;
+        }
+
+        img {
+          position: absolute;
+          top: 0;
+          right: 27%;
+        }
+      }
+    }
+    .marketing__box__info {
+      padding: 51px 0;
+      background: map-get($myListColor, "font-color-blue");
+      box-shadow: 0px 19px 46.5px 0px rgba(0, 0, 0, 0.32);
+      li {
+        color: map-get($myListColor, "font-color-white");
+        font-size: 55px;
+        font-weight: 400;
+        line-height: 64px;
+        padding: 7px 0;
+      }
+    }
+  }
+
+  // Section Need
+  &__need {
+    padding: 120px 0;
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__text {
+      max-width: 50%;
+      h1 {
+        color: map-get($myListColor, "font-color-black");
+        font-size: 77px;
+        font-weight: 600;
+        line-height: 71px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        color: map-get($myListColor, "font-color-black");
+        font-size: 24.59px;
+        font-weight: 300;
+        line-height: 29px;
+      }
+    }
+
+    &__image {
+      display: flex;
+      gap: 20px;
+      max-width: 50%;
+      img {
+        max-width: 400px;
+        object-fit: cover;
+        &:first-child {
+          margin-top: 200px;
+        }
+        &:last-child {
+          margin-bottom: 200px;
+        }
+      }
+    }
+  }
+
+  // Section Partners
+  &__partners {
+    padding: 120px 0;
+    &__header {
+      text-align: center;
+      padding: 70px 0 90px 0;
+      background-color: map-get($myListColor, "font-color-blue");
+      box-shadow: 0px 19px 46.5px 0px rgba(0, 0, 0, 0.32);
+      .inside__header {
+        position: relative;
+        display: inline-block;
+        h1 {
+          color: map-get($myListColor, "font-color-white");
+          font-size: 92px;
+          font-weight: 600;
+          line-height: 84px;
+        }
+        img {
+          position: absolute;
+          right: -25px;
+          bottom: -60px;
+        }
+      }
+    }
+    &__logos {
+      display: flex;
+      gap: 35px;
+      flex-wrap: wrap;
+      padding: 110px 0;
+      .logo__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 300px;
+      }
+    }
+    .partners__footer {
+      text-align: center;
+      color: map-get($myListColor, "font-color-black");
+      font-size: 52px;
+      font-weight: 400;
+      line-height: 48px;
+    }
+  }
+
+  // Section Problem Solve
+  &__problem__solve {
+    &__header {
+      text-align: center;
+      padding: 70px 0;
+      background-color: map-get($myListColor, "font-color-blue");
+      h1 {
+        color: map-get($myListColor, "font-color-white");
+        font-size: 68px;
+        font-weight: 600;
+        line-height: 68px;
+      }
+    }
+
+    &__body {
+      padding: 100px 0;
+      display: flex;
+      gap: 66px;
+      flex-wrap: wrap;
+      .card__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex: 1 1 420px;
+        position: relative;
+        font-size: 31px;
+        font-weight: 500;
+        line-height: 36px;
+        color: map-get($myListColor, "font-color-white");
+        background-color: map-get($myListColor, "font-color-blue");
+        border-radius: 31px;
+        padding: 40px 15px;
+        box-shadow: 0px 10px 17.3px 0px rgba(0, 0, 0, 0.18);
+        margin-bottom: 51px;
+        span {
+          position: absolute;
+          left: 50%;
+          top: -30px;
+          transform: translate(-50%, -10px);
+          color: map-get($myListColor, "font-color-black");
+          background-color: #f3e439;
+          padding: 5px 25px;
+          border-radius: 50%;
+          font-size: 35px;
+          font-weight: 500;
+          line-height: 49px;
+        }
+      }
+    }
+  }
+
+  // Section Request
+  &__request {
+    &__header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 150px 0 75px 0;
+      background-color: #f6f6f6;
+      color: map-get($myListColor, "font-color-black");
+      font-size: 57px;
+      font-weight: 600;
+      line-height: 65px;
+      span {
+        color: map-get($myListColor, "font-color-blue");
+      }
+      p {
+        color: map-get($myListColor, "font-color-white");
+        font-size: 37px;
+        font-weight: 400;
+        line-height: 43px;
+        padding: 25px 40px;
+        border-radius: 31px;
+        margin-top: 30px;
+        background-color: map-get($myListColor, "font-color-blue");
+        box-shadow: 0px 10px 17.3px 0px rgba(0, 0, 0, 0.18);
+      }
+    }
+    &__body {
+      margin: 50px 0;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      p {
+        color: map-get($myListColor, "font-color-black");
+        text-align: center;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 32px;
+        &:last-child {
+          margin: 45px auto 0 auto;
+        }
+      }
+    }
+  }
+
+  // Section Benefit
+  &__benefit {
+    position: relative;
+    margin: 110px 0;
+    &__header {
+      h1 {
+        color: map-get($myListColor, "font-color-white");
+        font-size: 87px;
+        font-weight: 700;
+        line-height: 87px;
+        padding: 70px 0;
+        text-align: center;
+        background-color: map-get($myListColor, "font-color-blue");
+      }
+    }
+
+    .rocket__wrapper {
+      position: absolute;
+      top: -35px;
+      left: 0;
+    }
+
+    &__body {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+
+      ul {
+        padding: 200px 0 100px 0;
+        max-width: 750px;
+        li {
+          color: map-get($myListColor, "font-color-black");
+          font-size: 31px;
+          font-weight: 400;
+          line-height: 48px;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+
+  // Section Improving
+  &__improving {
+    &__header {
+      padding: 70px 0;
+      text-align: center;
+      box-shadow: 0px 7px 18.4px 0px rgba(0, 0, 0, 0.35);
+      background-color: map-get($myListColor, "font-color-blue");
+      h1 {
+        color: map-get($myListColor, "font-color-white");
+        font-size: 68px;
+        font-weight: 600;
+        line-height: 66px;
+      }
+    }
+    &__body {
+      padding: 220px 0;
+      background-attachment: fixed;
+      background-image: url(../images/background/bg-letter-1.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .text {
+        max-width: 50%;
+        &__header {
+          .improving__element__1 {
+            position: relative;
+            display: inline-block;
+            height: 150px;
+          }
+
+          .improving__element__3 {
+            position: relative;
+          }
+          img {
+            position: absolute;
+            bottom: 0;
+            left: -35px;
+          }
+        }
+
+        &__footer {
+          margin-top: 140px;
+          h1 {
+            color: map-get($myListColor, "font-color-black");
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 31px;
+            margin-bottom: 20px;
+          }
+          li {
+            color: map-get($myListColor, "font-color-black");
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 31px;
+            padding: 5px 0;
+          }
+        }
+      }
+
+      .images {
+        display: flex;
+        gap: 20px;
+        max-width: 50%;
+        img {
+          max-width: 400px;
+        }
+      }
+    }
+  }
+
+  // Section Integration
+  &__integration {
+    padding: 120px 0;
+    &__header {
+    }
+
+    &__body {
+      img {
+      }
+    }
+  }
+
+  // Section Notification
+  &__notification {
+    padding: 120px 0;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__header {
+      .main__title span {
+        position: relative;
+        img {
+          position: absolute;
+          right: 35px;
+          bottom: 30px;
+        }
+      }
+    }
+
+    &__body {
+      display: flex;
+      gap: 20px;
+      img {
+        width: 250px;
+        &:first-child {
+          transform: rotate(350deg);
+        }
+        &:last-child {
+          transform: rotate(10deg);
+        }
+      }
+    }
+  }
+
+  // Section Message
+  &__message {
+    position: relative;
+    padding: 220px 0;
+    &__header {
+    }
+    &__body {
+      position: absolute;
+      top: -100px;
+      right: 0;
+    }
+  }
+
+  // Section Ready Game
+  &__ready__game,
+  &__ready__number {
+    padding: 250px 0;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .left {
+      position: relative;
+      max-width: 50%;
+      min-width: 400px;
+      p {
+        margin: 40px 0;
+      }
+      .bell__wrapper {
+        position: absolute;
+        left: 0;
+        top: -690px;
+      }
+    }
+
+    .right {
+      display: flex;
+      gap: 20px;
+      max-width: 50%;
+      min-width: 400px;
+      img {
+        width: 350px;
+        &:first-child {
+          margin-top: -100px;
+        }
+        &:last-child {
+          margin-bottom: -100px;
+        }
+      }
+    }
+  }
+
+  // Section Ready Number
+  &__ready__number {
+    background-attachment: fixed;
+    background-image: url(../images/background/bg-letter-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  // Section Funds
+  &__funds {
+    padding: 120px 0;
+    &__header {
+      .main__title {
+        position: relative;
+        img {
+          position: absolute;
+          right: 0;
+          top: -200px;
+        }
+      }
+      p {
+        margin-top: 30px;
+        span {
+          display: inline-block;
+          margin-top: 30px;
+        }
+      }
+    }
+
+    &__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      padding: 70px;
+      background-attachment: fixed;
+      background-image: url(../images/background/bg-letter-1.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: map-get($myListColor, "font-color-blue");
+      margin: 50px 0;
+      h2 {
+        color: map-get($myListColor, "font-color-white");
+        font-size: 88px;
+        font-weight: 600;
+        line-height: 96px;
+      }
+      .wallet_wrapper {
+        position: absolute;
+        right: 0;
+        top: -350px;
+      }
+    }
+  }
+
+  // Section Ready Answer
+  &__ready__answer {
+    display: flex;
+    flex-wrap: wrap;
+    h1 {
+      color: #fff;
+      font-size: 97px;
+      font-weight: 600;
+      line-height: 115%; 
+      margin-bottom: 60px;
+    }
+    &__left {
+      padding: 120px 80px;
+      width: 50%;
+      background-color: map-get($myListColor, "font-color-blue");
+      li {
+        color: map-get($myListColor, "font-color-white");
+        font-size: 31px;
+        font-weight: 400;
+        line-height: 112%;
+        padding: 25px 50px;
+      }
+    }
+
+    &__right {
+      padding: 120px 80px;
+      width: 50%;
+      background-color: map-get($myListColor, "font-color-black");
+      h1 {
+        color: #F3E439
+      }
+      li {
+        color: #f3e439;
+        font-size: 31px;
+        font-weight: 400;
+        line-height: 112%;
+        padding: 25px 50px;
+      }
+    }
+  }
+
+  // Section Footer
+  &__footer {
+    padding: 220px 0;
+    h1 {
+      color: map-get($myListColor, "font-color-black");
+      text-align: center;
+      font-size: 62px;
+      font-weight: 600;
+      line-height: 67px;
+      margin-bottom: 150px;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+    p {
+      margin: 70px auto 0 auto;
+      color: map-get($myListColor, "font-color-black");
+      text-align: center;
+      font-size: 29px;
+      font-weight: 400;
+      line-height: 34px;
+      max-width: 540px;
+    }
+  }
+}

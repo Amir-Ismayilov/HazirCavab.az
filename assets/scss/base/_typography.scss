@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Kanit";
+  src: url("../fonts/Kanit/Kanit-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kanit";
+  src: url("../fonts/Kanit/Kanit-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kanit";
+  src: url("../fonts/Kanit/Kanit-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kanit";
+  src: url("../fonts/Kanit/Kanit-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+.main__title {
+  color: map-get($myListColor, "font-color-black");
+  font-size: 82px;
+  font-weight: 600;
+  line-height: 95px;
+  margin-bottom: 20px;
+}
+
+.main__subtitle {
+  color: map-get($myListColor, "font-color-black");
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 36px;
+}

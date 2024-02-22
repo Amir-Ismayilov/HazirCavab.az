@@ -1,0 +1,28 @@
+/* QR animation */
+.square-wrapper {
+  margin: 0 auto;
+  .square-animation {
+    animation: wipe-enter 1.2s 1;
+  }
+
+  @keyframes wipe-enter {
+    0% {
+      transform: scale(0, 0.025);
+    }
+    50% {
+      transform: scale(1, 0.025);
+    }
+  }
+}
+
+
+/* Progressbar */
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10px;
+    opacity: 60%;
+    background-color: map-get($myListColor, "font-color-blue");
+    z-index: 99;
+}
