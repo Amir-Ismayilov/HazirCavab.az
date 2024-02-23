@@ -15,14 +15,62 @@
   }
 }
 
+/* Custom animation */
+.hu__hu__ {
+  animation: hu__hu__ infinite 2s ease-in-out;
+}
+@keyframes hu__hu__ {
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+.hu__hu__2 {
+  animation: hu__hu__2 infinite 2s ease-in-out;
+}
+@keyframes hu__hu__2 {
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.typing {
+  width: 540px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid map-get($myListColor, "font-color-blue");
+  animation: typing 3s steps(18, end) infinite alternate,
+    cursor 0.2s steps(18, end) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 540px;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
 
 /* Progressbar */
 .progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 10px;
-    opacity: 60%;
-    background-color: map-get($myListColor, "font-color-blue");
-    z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10px;
+  opacity: 60%;
+  background-color: map-get($myListColor, "font-color-blue");
+  z-index: 99;
+}
+
+
+
+.animate-on-scroll {
+  visibility: hidden;
 }
