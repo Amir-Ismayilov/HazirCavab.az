@@ -36,8 +36,6 @@ var observer = new IntersectionObserver(entries => {
 
 observer.observe(square);
 
-
-
 // Progressbar
 const pageProgressBar = document.querySelector(".progress-bar");
 

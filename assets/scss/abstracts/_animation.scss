@@ -58,6 +58,30 @@
   }
 }
 
+@media screen and (max-width: 576px) {
+  .typing {
+    width: 300px;
+    animation: typing 3s steps(12, end) infinite alternate,
+      cursor 0.2s steps(12, end) infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 300px;
+    }
+  }
+
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+}
+
 /* Progressbar */
 .progress-bar {
   position: fixed;
@@ -68,8 +92,6 @@
   background-color: map-get($myListColor, "font-color-blue");
   z-index: 99;
 }
-
-
 
 .animate-on-scroll {
   visibility: hidden;
