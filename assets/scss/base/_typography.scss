@@ -41,3 +41,16 @@
   font-weight: 400;
   line-height: 36px;
 }
+
+@media screen and (max-width: 992px) {
+  .main__title {
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .main__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
