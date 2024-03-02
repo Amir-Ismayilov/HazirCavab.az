@@ -53,4 +53,21 @@
     font-weight: 400;
     line-height: 26px;
   }
+
+  .mobile-none {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .main__subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+  }
 }
