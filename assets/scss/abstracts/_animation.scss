@@ -1,6 +1,5 @@
 /* QR animation */
 .square-wrapper {
-  margin: 0 auto;
   .square-animation {
     animation: wipe-enter 1.2s 1;
   }
@@ -19,6 +18,7 @@
 .hu__hu__ {
   animation: hu__hu__ infinite 2s ease-in-out;
 }
+
 @keyframes hu__hu__ {
   50% {
     transform: translateY(30px);
@@ -28,6 +28,7 @@
 .hu__hu__2 {
   animation: hu__hu__2 infinite 2s ease-in-out;
 }
+
 @keyframes hu__hu__2 {
   50% {
     transform: translateY(-30px);
@@ -38,7 +39,7 @@
   width: 540px;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid map-get($myListColor, "font-color-blue");
+  border-right: 2px solid map-get($myListColor, "color-blue");
   animation: typing 3s steps(18, end) infinite alternate,
     cursor 0.2s steps(18, end) infinite;
 }
@@ -47,6 +48,7 @@
   from {
     width: 0;
   }
+
   to {
     width: 540px;
   }
@@ -89,7 +91,7 @@
   left: 0;
   height: 10px;
   opacity: 60%;
-  background-color: map-get($myListColor, "font-color-blue");
+  background-color: map-get($myListColor, "color-blue");
   z-index: 99;
 }
 

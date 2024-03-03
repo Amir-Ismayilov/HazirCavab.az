@@ -10,10 +10,13 @@
         left: 0;
       }
       &__u {
-        bottom: -100px;
+        bottom: -50px;
         right: 0;
       }
       img {
+        @media screen and (max-width: 1450px) {
+          max-width: 400px;
+        }
         @media screen and (max-width: 1200px) {
           max-width: 370px;
         }
@@ -49,7 +52,7 @@
         img {
           position: absolute;
           bottom: -60px;
-          right: -25px;
+          right: 50px;
           @media screen and (max-width: 992px) {
             max-width: 300px;
             bottom: -35px;
@@ -58,12 +61,13 @@
         }
 
         p {
+          text-align: center;
           font-size: 49px;
-          color: map-get($myListColor, "font-color-blue");
+          color: map-get($myListColor, "color-blue");
           text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           font-weight: 300;
           line-height: 57px;
-          -webkit-text-stroke: 1px #000;
+          // -webkit-text-stroke: 1px #000;
           @media screen and (max-width: 1200px) {
             font-size: 32px;
             line-height: 42px;
@@ -91,20 +95,20 @@
         position: relative;
         display: inline-block;
         h1 {
-          color: map-get($myListColor, "font-color-blue");
+          color: map-get($myListColor, "color-blue");
           font-size: 96px;
           font-weight: 700;
           line-height: 110px;
           margin-bottom: 205px;
           @media screen and (max-width: 992px) {
-            margin-bottom: 100px;
             font-size: 48px;
             line-height: 55px;
+            margin-bottom: 100px;
           }
           @media screen and (max-width: 576px) {
-            margin-bottom: 70px;
             font-size: 32px;
             line-height: 38px;
+            margin-bottom: 70px;
           }
         }
 
@@ -118,36 +122,35 @@
           }
           @media screen and (max-width: 576px) {
             top: -15px;
+            width: 200px;
           }
         }
       }
     }
     .marketing__box__info {
       padding: 51px 25px;
-      background: map-get($myListColor, "font-color-blue");
+      background: map-get($myListColor, "color-blue");
       box-shadow: 0px 19px 46.5px 0px rgba(0, 0, 0, 0.32);
       li {
-        color: map-get($myListColor, "font-color-white");
+        color: map-get($myListColor, "color-white");
         font-size: 55px;
         font-weight: 400;
         line-height: 64px;
-        padding: 7px 0;
+        padding: 15px 0;
         @media screen and (max-width: 992px) {
           font-size: 28px;
           font-weight: 400;
           line-height: 32px;
-          padding: 7px 0;
         }
         @media screen and (max-width: 576px) {
-          font-size: 22px;
+          font-size: 20px;
           font-weight: 400;
           line-height: 24px;
         }
       }
     }
     @media screen and (max-width: 992px) {
-      padding-top: 110px;
-      padding-bottom: 20px;
+      padding: 110px 0;
     }
   }
 
@@ -167,66 +170,64 @@
     &__text {
       width: 50%;
       min-width: 550px;
-      @media screen and (max-width: 576px) {
-        min-width: fit-content;
-      }
       h1 {
-        color: map-get($myListColor, "font-color-black");
+        color: map-get($myListColor, "color-black");
         font-size: 77px;
         font-weight: 600;
         line-height: 71px;
         margin-bottom: 30px;
         @media screen and (max-width: 992px) {
-          font-size: 32px;
-          font-weight: 500;
+          font-size: 36px;
           line-height: 36px;
+          font-weight: 500;
           margin-bottom: 20px;
           text-align: center;
         }
       }
 
       p {
-        color: map-get($myListColor, "font-color-black");
-        font-size: 24.59px;
+        color: map-get($myListColor, "color-black");
+        font-size: 24px;
         font-weight: 300;
         line-height: 29px;
         @media screen and (max-width: 992px) {
-          font-size: 18px;
-          line-height: 18px;
+          font-size: 20px;
+          line-height: 20px;
           text-align: center;
         }
       }
       @media screen and (max-width: 992px) {
-        max-width: 100%;
+        width: 100%;
         margin-bottom: 60px;
+      }
+      @media screen and (max-width: 576px) {
+        min-width: fit-content;
       }
     }
 
     &__image {
       display: flex;
+      margin-top: 30px;
       width: 50%;
       min-width: 550px;
-      margin-top: 30px;
-      @media screen and (max-width: 576px) {
-        min-width: fit-content;
-        margin-top: 0;
-      }
       img {
-        max-width: 50%;
+        width: 50%;
         object-fit: cover;
         &:first-child {
           margin-top: 200px;
+          @media screen and (max-width: 576px) {
+            margin-top: 100px;
+          }
         }
         &:last-child {
           margin-bottom: 200px;
+          @media screen and (max-width: 576px) {
+            margin-bottom: 100px;
+          }
         }
       }
       @media screen and (max-width: 992px) {
-        max-width: 100%;
-      }
-
-      @media screen and (max-width: 768px) {
-        max-width: 100%;
+        min-width: 100%;
       }
     }
     @media screen and (max-width: 992px) {
@@ -240,19 +241,19 @@
     &__header {
       text-align: center;
       padding: 70px 0 90px 0;
-      background-color: map-get($myListColor, "font-color-blue");
+      background-color: map-get($myListColor, "color-blue");
       box-shadow: 0px 19px 46.5px 0px rgba(0, 0, 0, 0.32);
       .inside__header {
         position: relative;
         display: inline-block;
         h1 {
-          color: map-get($myListColor, "font-color-white");
+          color: map-get($myListColor, "color-white");
           font-size: 92px;
           font-weight: 600;
           line-height: 84px;
           @media screen and (max-width: 992px) {
             font-size: 46px;
-            line-height: 42px;
+            line-height: 46px;
           }
         }
         img {
@@ -274,7 +275,7 @@
       display: flex;
       gap: 35px;
       flex-wrap: wrap;
-      padding: 110px 0;
+      padding: 110px 20px !important;
       .logo__item {
         display: flex;
         justify-content: center;
@@ -282,14 +283,11 @@
         flex: 1 1 300px;
         img {
           @media screen and (max-width: 992px) {
-            height: 120px;
+            height: 130px;
             width: 200px;
             object-fit: contain;
           }
         }
-      }
-      @media screen and (max-width: 768px) {
-        gap: 25px;
       }
       @media screen and (max-width: 576px) {
         padding: 70px 0;
@@ -297,7 +295,7 @@
     }
     .partners__footer {
       margin: 0 auto;
-      color: map-get($myListColor, "font-color-black");
+      color: map-get($myListColor, "color-black");
       font-size: 52px;
       font-weight: 400;
       line-height: 48px;
@@ -305,7 +303,7 @@
         font-size: 26px;
       }
     }
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 992px) {
       padding: 70px 0;
     }
   }
@@ -315,25 +313,25 @@
     &__header {
       text-align: center;
       padding: 70px 0;
-      background-color: map-get($myListColor, "font-color-blue");
+      background-color: map-get($myListColor, "color-blue");
       h1 {
-        color: map-get($myListColor, "font-color-white");
+        color: map-get($myListColor, "color-white");
         font-size: 68px;
         font-weight: 600;
         line-height: 68px;
         @media screen and (max-width: 992px) {
-          font-size: 34px;
-          line-height: 34px;
+          font-size: 46px;
+          line-height: 46px;
         }
         @media screen and (max-width: 576px) {
-          font-size: 24px;
+          font-size: 28px;
           line-height: 28px;
         }
       }
     }
 
     &__body {
-      padding: 100px 0;
+      padding: 120px 20px !important;
       display: flex;
       gap: 66px;
       flex-wrap: wrap;
@@ -347,21 +345,18 @@
         font-size: 31px;
         font-weight: 500;
         line-height: 36px;
-        color: map-get($myListColor, "font-color-white");
-        background-color: map-get($myListColor, "font-color-blue");
+        color: map-get($myListColor, "color-white");
+        background-color: map-get($myListColor, "color-blue");
         border-radius: 31px;
         padding: 40px 15px;
         box-shadow: 0px 10px 17.3px 0px rgba(0, 0, 0, 0.18);
         margin-bottom: 51px;
-        @media screen and (max-width: 992px) {
-          border-radius: 15px;
-        }
         span {
           position: absolute;
           left: 50%;
           top: -30px;
           transform: translate(-50%, -10px);
-          color: map-get($myListColor, "font-color-black");
+          color: map-get($myListColor, "color-black");
           background-color: #f3e439;
           padding: 5px 25px;
           border-radius: 50%;
@@ -375,8 +370,10 @@
           margin-bottom: 27px;
         }
         @media screen and (max-width: 576px) {
-          font-size: 18px;
+          font-size: 20px;
           line-height: 24px;
+          font-weight: 400;
+          border-radius: 12px;
         }
       }
     }
@@ -392,26 +389,22 @@
       text-align: center;
       padding: 150px 0 75px 0;
       background-color: #f6f6f6;
-      color: map-get($myListColor, "font-color-black");
+      color: map-get($myListColor, "color-black");
       font-size: 57px;
       font-weight: 600;
       line-height: 65px;
-      @media screen and (max-width: 992px) {
-        font-size: 28px;
-        line-height: 35px;
-      }
       span {
-        color: map-get($myListColor, "font-color-blue");
+        color: map-get($myListColor, "color-blue");
       }
       p {
-        color: map-get($myListColor, "font-color-white");
+        color: map-get($myListColor, "color-white");
         font-size: 37px;
         font-weight: 400;
         line-height: 43px;
         padding: 25px 40px;
         border-radius: 31px;
         margin-top: 30px;
-        background-color: map-get($myListColor, "font-color-blue");
+        background-color: map-get($myListColor, "color-blue");
         box-shadow: 0px 10px 17.3px 0px rgba(0, 0, 0, 0.18);
         @media screen and (max-width: 992px) {
           font-size: 19px;
@@ -423,14 +416,16 @@
         }
       }
       @media screen and (max-width: 992px) {
+        font-size: 28px;
+        line-height: 28px;
         padding: 75px 0 50px 0;
       }
       @media screen and (max-width: 576px) {
         padding: 75px 20px 50px 20px;
       }
     }
+
     &__body {
-      margin: 50px 0;
       img {
         width: 100%;
         height: 100%;
@@ -442,16 +437,17 @@
       }
 
       p {
-        color: map-get($myListColor, "font-color-black");
+        color: map-get($myListColor, "color-black");
         text-align: center;
         font-size: 28px;
         font-weight: 400;
+        margin-top: 20px;
         line-height: 32px;
         &:last-child {
-          margin: 45px auto 0 auto;
+          margin: 45px 0;
         }
         @media screen and (max-width: 992px) {
-          font-size: 16px;
+          font-size: 20px;
           line-height: 20px;
         }
       }
@@ -464,16 +460,20 @@
     margin: 110px 0;
     &__header {
       h1 {
-        color: map-get($myListColor, "font-color-white");
+        color: map-get($myListColor, "color-white");
         font-size: 87px;
         font-weight: 700;
         line-height: 87px;
         padding: 70px 0;
         text-align: center;
-        background-color: map-get($myListColor, "font-color-blue");
+        background-color: map-get($myListColor, "color-blue");
         @media screen and (max-width: 992px) {
-          font-size: 34px;
-          line-height: 34px;
+          font-size: 46px;
+          line-height: 46px;
+        }
+        @media screen and (max-width: 576px) {
+          font-size: 28px;
+          line-height: 28px;
         }
       }
     }
@@ -484,12 +484,18 @@
       left: 0;
 
       img {
+        @media screen and (max-width: 1500px) {
+          max-width: 400px;
+        }
         @media screen and (max-width: 1200px) {
           max-width: 300px;
         }
         @media screen and (max-width: 992px) {
           max-width: 150px;
         }
+      }
+      @media screen and (max-width: 1200px) {
+        top: unset;
       }
       @media screen and (max-width: 992px) {
         top: -120px;
@@ -506,7 +512,7 @@
         padding: 200px 0 100px 0;
         max-width: 750px;
         li {
-          color: map-get($myListColor, "font-color-black");
+          color: map-get($myListColor, "color-black");
           font-size: 31px;
           font-weight: 400;
           line-height: 48px;
@@ -538,33 +544,29 @@
       padding: 70px 0;
       text-align: center;
       box-shadow: 0px 7px 18.4px 0px rgba(0, 0, 0, 0.35);
-      background-color: map-get($myListColor, "font-color-blue");
+      background-color: map-get($myListColor, "color-blue");
       h1 {
-        color: map-get($myListColor, "font-color-white");
+        color: map-get($myListColor, "color-white");
         font-size: 68px;
         font-weight: 600;
         line-height: 66px;
         @media screen and (max-width: 992px) {
-          font-size: 34px;
-          line-height: 34px;
+          font-size: 46px;
+          line-height: 46px;
+        }
+        @media screen and (max-width: 576px) {
+          font-size: 28px;
+          line-height: 28px;
         }
       }
     }
+
     &__body {
       padding: 220px 0;
       background-attachment: fixed;
       background-image: url(../images/background/bg-letter-1.svg);
       background-repeat: no-repeat;
       background-size: cover;
-      @media screen and (max-width: 1200px) {
-        padding: 110px 0;
-      }
-      @media screen and (max-width: 992px) {
-        padding: 70px 0;
-      }
-      @media screen and (max-width: 576px) {
-        padding: 70px 0;
-      }
       .container {
         display: flex;
         flex-wrap: wrap;
@@ -574,23 +576,17 @@
           justify-content: center;
         }
       }
+
       .text {
         max-width: 50%;
         min-width: 550px;
-        @media screen and (max-width: 992px) {
-          min-width: 100%;
-          margin-bottom: 60px;
-        }
         &__header {
-          @media screen and (max-width: 992px) {
-            text-align: center;
-          }
           .improving__element__1 {
             position: relative;
             display: inline-block;
             height: 150px;
             @media screen and (max-width: 992px) {
-              height: 100px;
+              height: unset;
             }
           }
           .improving__element__3 {
@@ -600,18 +596,45 @@
             position: absolute;
             bottom: 0;
             left: -35px;
-            @media screen and (max-width: 992px) {
-              bottom: 25px;
-              right: 0;
-              max-width: 250px;
-            }
+          }
+          @media screen and (max-width: 576px) {
+            text-align: center;
           }
         }
 
         &__footer {
-          margin-top: 140px;
+          margin-top: 120px;
+          h1 {
+            color: map-get($myListColor, "color-black");
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 31px;
+            margin-bottom: 20px;
+            @media screen and (max-width: 992px) {
+              font-size: 36px;
+              font-weight: 500;
+              line-height: 36px;
+              text-align: center;
+            }
+            @media screen and (max-width: 576px) {
+              font-size: 28px;
+              font-weight: 400;
+              line-height: 28px;
+            }
+          }
+          li {
+            color: map-get($myListColor, "color-black");
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 31px;
+            padding: 10px 0;
+            @media screen and (max-width: 992px) {
+              font-size: 20px;
+              line-height: 20px;
+            }
+          }
           @media screen and (max-width: 992px) {
-            margin-top: 100px;
+            margin-top: 80px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -619,36 +642,15 @@
               padding-left: 20px;
             }
           }
-          h1 {
-            color: map-get($myListColor, "font-color-black");
-            font-size: 26px;
-            font-weight: 300;
-            line-height: 31px;
-            margin-bottom: 20px;
-            @media screen and (max-width: 992px) {
-              font-size: 32px;
-              font-weight: 500;
-              line-height: 31px;
-              text-align: center;
-            }
-          }
-          li {
-            color: map-get($myListColor, "font-color-black");
-            font-size: 26px;
-            font-weight: 300;
-            line-height: 31px;
-            padding: 5px 0;
-            @media screen and (max-width: 992px) {
-              font-size: 21px;
-              line-height: 24px;
-            }
-          }
+        }
+        @media screen and (max-width: 992px) {
+          min-width: 100%;
+          margin-bottom: 60px;
         }
       }
 
       .images {
         display: flex;
-        // gap: 20px;
         max-width: 50%;
         justify-content: center;
         min-width: 550px;
@@ -659,15 +661,19 @@
           max-width: 50%;
         }
       }
+
+      @media screen and (max-width: 1200px) {
+        padding: 110px 0;
+      }
+      @media screen and (max-width: 992px) {
+        padding: 70px 0;
+      }
     }
   }
 
   // Section Integration
   &__integration {
     padding: 120px 0;
-    @media screen and (max-width: 992px) {
-      padding: 70px 0;
-    }
     &__header {
       display: flex;
       flex-direction: column;
@@ -681,23 +687,23 @@
 
     &__body {
       margin-top: 120px;
-      @media screen and (max-width: 576px) {
-        margin-top: 70px;
-      }
       img {
         width: 100%;
         height: 100%;
         object-fit: contain;
       }
+      @media screen and (max-width: 576px) {
+        margin-top: 70px;
+      }
+    }
+    @media screen and (max-width: 992px) {
+      padding: 70px 0;
     }
   }
 
   // Section Notification
   &__notification {
     padding: 120px 0;
-    @media screen and (max-width: 992px) {
-      padding: 70px 0;
-    }
     .container {
       display: flex;
       flex-wrap: wrap;
@@ -707,38 +713,36 @@
     &__header {
       max-width: 50%;
       min-width: 550px;
-      @media screen and (max-width: 992px) {
-        min-width: 100%;
-        margin-bottom: 60px;
-        text-align: center;
-      }
       .main__title span {
         position: relative;
         img {
           position: absolute;
           right: 35px;
           bottom: 30px;
-          @media screen and (max-width: 992px) {
-            bottom: -5px;
-            right: -70px;
-          }
         }
+      }
+      @media screen and (max-width: 992px) {
+        min-width: 100%;
+        margin-bottom: 60px;
+        text-align: center;
       }
     }
 
     &__body {
       max-width: 50%;
       min-width: 550px;
-      @media screen and (max-width: 992px) {
-        min-width: 100%;
-        margin-bottom: 60px;
-      }
       display: flex;
-      // gap: 20px;
       img {
         width: 50%;
         object-fit: contain;
       }
+      @media screen and (max-width: 992px) {
+        min-width: 100%;
+        margin-bottom: 60px;
+      }
+    }
+    @media screen and (max-width: 992px) {
+      padding: 70px 0;
     }
   }
 
@@ -764,17 +768,18 @@
       position: absolute;
       right: 0;
       max-width: 900px;
-      @media screen and (max-width: 1200px) {
-        top: 280px;
-        max-width: 700px;
-      }
-      @media screen and (max-width: 576px) {
-        // max-width: 400px;
-      }
       img {
         height: 100%;
         width: 100%;
         object-fit: cover;
+      }
+      @media screen and (max-width: 1200px) {
+        top: 300px;
+        max-width: 500px;
+      }
+      @media screen and (max-width: 576px) {
+        // top: 160px;
+        max-width: 300px;
       }
     }
     @media screen and (max-width: 992px) {
@@ -785,12 +790,6 @@
   // Section Ready Game
   &__ready__game {
     padding-top: 250px;
-    @media screen and (max-width: 992px) {
-      margin-top: 600px;
-    }
-    @media screen and (max-width: 576px) {
-      margin-top: 200px;
-    }
     .container {
       display: flex;
       flex-wrap: wrap;
@@ -809,13 +808,13 @@
       position: relative;
       width: 50%;
       min-width: 550px;
+      p {
+        margin: 30px 0;
+      }
       @media screen and (max-width: 992px) {
         text-align: center;
         min-width: 100%;
-        margin-bottom: 150px;
-      }
-      p {
-        margin: 40px 0;
+        margin-bottom: 50px;
       }
     }
 
@@ -823,7 +822,7 @@
       display: flex;
       width: 50%;
       min-width: 550px;
-      margin-top: 150px;
+      margin-top: 100px;
       img {
         max-width: 50%;
         object-fit: cover;
@@ -840,6 +839,12 @@
         align-items: center;
         justify-content: center;
       }
+    }
+    @media screen and (max-width: 992px) {
+      margin-top: 500px;
+    }
+    @media screen and (max-width: 576px) {
+      margin-top: 150px;
     }
   }
 
@@ -874,14 +879,17 @@
           text-align: center;
           min-width: 100%;
         }
+        p {
+          margin: 20px 0;
+        }
         .calculater-wrapper {
-          @media screen and (max-width: 1200px) {
-            max-width: 300px;
-            margin: 0 auto;
-          }
           img {
             width: 100%;
             height: 100%;
+          }
+          @media screen and (max-width: 1200px) {
+            max-width: 300px;
+            margin: 0 auto;
           }
         }
       }
@@ -895,24 +903,24 @@
         min-height: 100%;
         border-radius: 51px;
         border: 1px solid #000;
-        background-color: map-get($myListColor, "font-color-blue");
+        background-color: map-get($myListColor, "color-blue");
         img {
           width: 100%;
-          // @media screen and (max-width: 576px) {
-          //   max-width: 320px;
-          // }
         }
         @media screen and (max-width: 1200px) {
           text-align: center;
-          min-width: 100%;
           padding: 50px;
+        }
+        @media screen and (max-width: 992px) {
+          margin-top: 40px;
+          border-radius: 30px;
+          min-width: 100%;
         }
         @media screen and (max-width: 576px) {
           padding: 15px;
         }
       }
       @media screen and (max-width: 1200px) {
-        min-width: 100%;
         justify-content: center;
       }
     }
@@ -920,17 +928,24 @@
 
   // Section Funds
   &__funds {
-    padding: 160px 0;
+    padding: 220px 0;
     &__header {
-      @media screen and (max-width: 992px) {
-        text-align: center;
-      }
       .main__title {
         position: relative;
         img {
           position: absolute;
           right: 0;
           top: -200px;
+          @media screen and (max-width: 1200px) {
+            max-width: 300px;
+            top: 220px;
+            z-index: 2;
+          }
+          @media screen and (max-width: 576px) {
+            max-width: 150px;
+            top: 290px;
+            z-index: 2;
+          }
         }
       }
       p {
@@ -939,6 +954,9 @@
           display: inline-block;
           margin-top: 30px;
         }
+      }
+      @media screen and (max-width: 992px) {
+        text-align: center;
       }
     }
 
@@ -949,23 +967,15 @@
       background-image: url(../images/background/bg-letter-1.svg);
       background-repeat: no-repeat;
       background-size: cover;
-      background-color: map-get($myListColor, "font-color-blue");
+      background-color: map-get($myListColor, "color-blue");
       margin-top: 150px;
       margin-bottom: 50px;
       height: 350px;
-      @media screen and (max-width: 992px) {
-        margin-top: 50px;
-        height: fit-content;
-        padding: 40px 0;
-      }
       .container {
         display: flex;
         justify-content: space-between;
-        @media screen and (max-width: 992px) {
-          flex-direction: column;
-        }
         h2 {
-          color: map-get($myListColor, "font-color-white");
+          color: map-get($myListColor, "color-white");
           font-size: 88px;
           font-weight: 600;
           line-height: 96px;
@@ -975,11 +985,11 @@
           @media screen and (max-width: 992px) {
             font-size: 44px;
             font-weight: 400;
-            line-height: 48px;
+            line-height: 44px;
           }
           @media screen and (max-width: 576px) {
-            font-size: 32px;
-            line-height: 32px;
+            font-size: 36px;
+            line-height: 36px;
           }
         }
         .wallet_wrapper {
@@ -992,10 +1002,18 @@
             object-fit: cover;
           }
         }
+        @media screen and (max-width: 992px) {
+          flex-direction: column;
+        }
+      }
+      @media screen and (max-width: 992px) {
+        margin-top: 100px;
+        height: fit-content;
+        padding: 40px 0;
       }
     }
     @media screen and (max-width: 992px) {
-      padding-top: 160px;
+      padding-top: 110px;
       padding-bottom: 0;
     }
   }
@@ -1010,45 +1028,51 @@
       line-height: 115%;
       margin-bottom: 60px;
       @media screen and (max-width: 992px) {
-        font-size: 48px;
+        font-size: 46px;
+        line-height: 46px;
         font-weight: 400;
-        line-height: 95%;
-        margin-bottom: 34px;
+        margin-bottom: 20px;
         text-align: center;
+      }
+      @media screen and (max-width: 576px) {
+        font-size: 36px;
+        line-height: 36px;
       }
     }
 
     &__left {
       padding: 120px 80px;
       width: 50%;
-      background-color: map-get($myListColor, "font-color-blue");
+      background-color: map-get($myListColor, "color-blue");
       li {
-        color: map-get($myListColor, "font-color-white");
+        color: map-get($myListColor, "color-white");
         font-size: 31px;
         font-weight: 400;
         line-height: 112%;
         padding: 25px 50px;
         @media screen and (max-width: 992px) {
-          font-size: 28px;
-          font-weight: 400;
+          font-size: 36px;
+          line-height: 36px;
           padding: 25px;
         }
         @media screen and (max-width: 576px) {
-          padding: 25px;
+          font-size: 20px;
+          line-height: 20px;
+          padding: 10px 20px;
         }
       }
       @media screen and (max-width: 1200px) {
         width: 100%;
       }
       @media screen and (max-width: 576px) {
-        padding: 80px 0;
+        padding: 50px 0;
       }
     }
 
     &__right {
       padding: 120px 80px;
       width: 50%;
-      background-color: map-get($myListColor, "font-color-black");
+      background-color: map-get($myListColor, "color-black");
       h1 {
         color: #f3e439;
       }
@@ -1059,19 +1083,21 @@
         line-height: 112%;
         padding: 25px 50px;
         @media screen and (max-width: 992px) {
-          font-size: 24px;
-          font-weight: 400;
+          font-size: 36px;
+          line-height: 36px;
           padding: 25px;
         }
         @media screen and (max-width: 576px) {
-          padding: 20px;
+          font-size: 20px;
+          line-height: 20px;
+          padding: 10px 20px;
         }
       }
       @media screen and (max-width: 1200px) {
         width: 100%;
       }
       @media screen and (max-width: 576px) {
-        padding: 80px 0;
+        padding: 50px 0;
       }
     }
     @media screen and (max-width: 1200px) {
@@ -1083,22 +1109,23 @@
   &__footer {
     padding: 220px 0;
     h1 {
-      color: map-get($myListColor, "font-color-black");
+      color: map-get($myListColor, "color-black");
       text-align: center;
       font-size: 62px;
       font-weight: 600;
       line-height: 67px;
       margin-bottom: 150px;
       @media screen and (max-width: 992px) {
-        font-size: 48px;
+        font-size: 46px;
+        line-height: 46px;
         font-weight: 400;
         margin-bottom: 100px;
         text-align: center;
       }
       @media screen and (max-width: 576px) {
-        font-size: 28px;
-        line-height: 28px;
-        margin-bottom: 100px;
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 50px;
         text-align: center;
       }
     }
@@ -1113,7 +1140,7 @@
     }
     p {
       margin: 70px auto 0 auto;
-      color: map-get($myListColor, "font-color-black");
+      color: map-get($myListColor, "color-black");
       text-align: center;
       font-size: 29px;
       font-weight: 400;
@@ -1125,7 +1152,7 @@
       }
     }
     @media screen and (max-width: 992px) {
-      padding: 110px 0;
+      padding: 70px 0;
     }
   }
 }
