@@ -1376,6 +1376,11 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 576px) {
+  .section__footer .square-wrapper img {
+    max-width: 200px;
+  }
+}
 .section__footer p {
   margin: 70px auto 0 auto;
   color: #252525;
@@ -1442,6 +1447,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   font-family: "Kanit";
+  overflow-x: hidden;
 }
 
 blockquote, q {

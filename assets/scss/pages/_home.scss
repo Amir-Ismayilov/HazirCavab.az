@@ -1136,6 +1136,9 @@
         width: 100%;
         max-width: 380px;
         object-fit: cover;
+        @media screen and (max-width: 576px) {
+          max-width: 200px;
+        }
       }
     }
     p {
