@@ -29,7 +29,7 @@
 
 .main__title {
   color: map-get($myListColor, "color-black");
-  font-size: 82px;
+  font-size: 65px;
   font-weight: 600;
   line-height: 95px;
   margin-bottom: 20px;
@@ -37,14 +37,14 @@
 
 .main__subtitle {
   color: map-get($myListColor, "color-black");
-  font-size: 31px;
+  font-size: 25px;
   font-weight: 400;
   line-height: 36px;
 }
 
 @media screen and (max-width: 992px) {
   .main__title {
-    font-size: 46px;
+    font-size: 36px;
     line-height: 46px;
   }
 
@@ -62,7 +62,7 @@
 
 @media screen and (max-width: 576px) {
   .main__title {
-    font-size: 28px;
+    font-size: 22px;
     line-height: 28px;
   }
 

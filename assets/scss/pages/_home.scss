@@ -15,7 +15,7 @@
       }
       img {
         @media screen and (max-width: 1450px) {
-          max-width: 400px;
+          max-width: 375px;
         }
         @media screen and (max-width: 1200px) {
           max-width: 370px;
@@ -62,14 +62,14 @@
 
         p {
           text-align: center;
-          font-size: 49px;
+          font-size: 38px;
           color: map-get($myListColor, "color-blue");
           text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           font-weight: 300;
           line-height: 57px;
           // -webkit-text-stroke: 1px #000;
           @media screen and (max-width: 1200px) {
-            font-size: 32px;
+            font-size: 26px;
             line-height: 42px;
           }
           @media screen and (max-width: 992px) {
@@ -96,17 +96,17 @@
         display: inline-block;
         h1 {
           color: map-get($myListColor, "color-blue");
-          font-size: 96px;
+          font-size: 65px;
           font-weight: 700;
           line-height: 110px;
           margin-bottom: 205px;
           @media screen and (max-width: 992px) {
-            font-size: 48px;
+            font-size: 38px;
             line-height: 55px;
             margin-bottom: 100px;
           }
           @media screen and (max-width: 576px) {
-            font-size: 32px;
+            font-size: 26px;
             line-height: 38px;
             margin-bottom: 70px;
           }
@@ -133,7 +133,7 @@
       box-shadow: 0px 19px 46.5px 0px rgba(0, 0, 0, 0.32);
       li {
         color: map-get($myListColor, "color-white");
-        font-size: 55px;
+        font-size: 42px;
         font-weight: 400;
         line-height: 64px;
         padding: 15px 0;
@@ -172,12 +172,12 @@
       min-width: 550px;
       h1 {
         color: map-get($myListColor, "color-black");
-        font-size: 77px;
+        font-size: 58px;
         font-weight: 600;
         line-height: 71px;
         margin-bottom: 30px;
         @media screen and (max-width: 992px) {
-          font-size: 36px;
+          font-size: 28px;
           line-height: 36px;
           font-weight: 500;
           margin-bottom: 20px;
@@ -248,11 +248,11 @@
         display: inline-block;
         h1 {
           color: map-get($myListColor, "color-white");
-          font-size: 92px;
+          font-size: 65px;
           font-weight: 600;
           line-height: 84px;
           @media screen and (max-width: 992px) {
-            font-size: 46px;
+            font-size: 36px;
             line-height: 46px;
           }
         }
@@ -296,7 +296,7 @@
     .partners__footer {
       margin: 0 auto;
       color: map-get($myListColor, "color-black");
-      font-size: 52px;
+      font-size: 38px;
       font-weight: 400;
       line-height: 48px;
       @media screen and (max-width: 576px) {
@@ -316,16 +316,16 @@
       background-color: map-get($myListColor, "color-blue");
       h1 {
         color: map-get($myListColor, "color-white");
-        font-size: 68px;
+        font-size: 48px;
         font-weight: 600;
-        line-height: 68px;
+        line-height: 48px;
         @media screen and (max-width: 992px) {
-          font-size: 46px;
+          font-size: 36px;
           line-height: 46px;
         }
         @media screen and (max-width: 576px) {
-          font-size: 28px;
-          line-height: 28px;
+          font-size: 22px;
+          line-height: 22px;
         }
       }
     }
@@ -342,7 +342,7 @@
         text-align: center;
         flex: 1 1 420px;
         position: relative;
-        font-size: 31px;
+        font-size: 24px;
         font-weight: 500;
         line-height: 36px;
         color: map-get($myListColor, "color-white");
@@ -360,9 +360,9 @@
           background-color: #f3e439;
           padding: 5px 25px;
           border-radius: 50%;
-          font-size: 35px;
+          font-size: 28px;
           font-weight: 500;
-          line-height: 49px;
+          line-height: 32px;
         }
         @media screen and (max-width: 992px) {
           font-size: 24px;
@@ -390,15 +390,15 @@
       padding: 150px 0 75px 0;
       background-color: #f6f6f6;
       color: map-get($myListColor, "color-black");
-      font-size: 57px;
+      font-size: 36px;
       font-weight: 600;
-      line-height: 65px;
+      line-height: 45px;
       span {
         color: map-get($myListColor, "color-blue");
       }
       p {
         color: map-get($myListColor, "color-white");
-        font-size: 37px;
+        font-size: 28px;
         font-weight: 400;
         line-height: 43px;
         padding: 25px 40px;
@@ -461,15 +461,15 @@
     &__header {
       h1 {
         color: map-get($myListColor, "color-white");
-        font-size: 87px;
+        font-size: 68px;
         font-weight: 700;
         line-height: 87px;
         padding: 70px 0;
         text-align: center;
         background-color: map-get($myListColor, "color-blue");
         @media screen and (max-width: 992px) {
-          font-size: 46px;
-          line-height: 46px;
+          font-size: 36px;
+          line-height: 36px;
         }
         @media screen and (max-width: 576px) {
           font-size: 28px;
@@ -547,9 +547,9 @@
       background-color: map-get($myListColor, "color-blue");
       h1 {
         color: map-get($myListColor, "color-white");
-        font-size: 68px;
+        font-size: 36px;
         font-weight: 600;
-        line-height: 66px;
+        line-height: 46px;
         @media screen and (max-width: 992px) {
           font-size: 46px;
           line-height: 46px;
@@ -976,20 +976,20 @@
         justify-content: space-between;
         h2 {
           color: map-get($myListColor, "color-white");
-          font-size: 88px;
+          font-size: 68px;
           font-weight: 600;
           line-height: 96px;
           @media screen and (max-width: 1200px) {
             text-align: center;
           }
           @media screen and (max-width: 992px) {
-            font-size: 44px;
+            font-size: 34px;
             font-weight: 400;
-            line-height: 44px;
+            line-height: 34px;
           }
           @media screen and (max-width: 576px) {
-            font-size: 36px;
-            line-height: 36px;
+            font-size: 28px;
+            line-height: 28px;
           }
         }
         .wallet_wrapper {
@@ -1023,7 +1023,7 @@
     display: flex;
     h1 {
       color: #fff;
-      font-size: 97px;
+      font-size: 68px;
       font-weight: 600;
       line-height: 115%;
       margin-bottom: 60px;
@@ -1035,7 +1035,7 @@
         text-align: center;
       }
       @media screen and (max-width: 576px) {
-        font-size: 36px;
+        font-size: 32px;
         line-height: 36px;
       }
     }
@@ -1051,7 +1051,7 @@
         line-height: 112%;
         padding: 25px 50px;
         @media screen and (max-width: 992px) {
-          font-size: 36px;
+          font-size: 28px;
           line-height: 36px;
           padding: 25px;
         }
@@ -1083,7 +1083,7 @@
         line-height: 112%;
         padding: 25px 50px;
         @media screen and (max-width: 992px) {
-          font-size: 36px;
+          font-size: 28px;
           line-height: 36px;
           padding: 25px;
         }
@@ -1111,13 +1111,13 @@
     h1 {
       color: map-get($myListColor, "color-black");
       text-align: center;
-      font-size: 62px;
+      font-size: 48px;
       font-weight: 600;
       line-height: 67px;
       margin-bottom: 150px;
       @media screen and (max-width: 992px) {
-        font-size: 46px;
-        line-height: 46px;
+        font-size: 32px;
+        line-height: 42px;
         font-weight: 400;
         margin-bottom: 100px;
         text-align: center;
@@ -1145,7 +1145,7 @@
       margin: 70px auto 0 auto;
       color: map-get($myListColor, "color-black");
       text-align: center;
-      font-size: 29px;
+      font-size: 24px;
       font-weight: 400;
       line-height: 34px;
       max-width: 540px;
